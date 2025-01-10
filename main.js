@@ -30,7 +30,7 @@ searchButton.addEventListener('click', async () => {
   showLoading(searchResults);
 
   try {
-    const response = await fetch(`https://ytdownloader.nvlgroup.my.id/search?q=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://ytdownloader.nvlgroup.my.id/search?q=${encodeURIComponent(query)}`;
     if (!response.ok) throw new Error(await response.text());
     const data = await response.json();
 
@@ -105,12 +105,12 @@ fetchInfoButton.addEventListener('click', async () => {
 
     downloadMP4Button.onclick = () => {
       const resolution = resolutionSelect.value;
-      window.location.href = `/download?url=${encodeURIComponent(url)}&resolution=${resolution}`;
+        window.location.href = `https://api.maelyn.tech/api/youtube/video?url==${encodeURIComponent(url)}&apikey=AtharBotz`
     };
 
     downloadMP3Button.onclick = () => {
       const bitrate = bitrateSelect.value;
-      window.location.href = `/audio?url=${encodeURIComponent(url)}&bitrate=${bitrate}`;
+        window.location.href = `https://api.maelyn.tech/api/youtube/audio?url==${encodeURIComponent(url)}&apikey=AtharBotz`
     };
 
   } catch (error) {
