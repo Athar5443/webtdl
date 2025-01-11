@@ -7,7 +7,7 @@ document.getElementById('downloadForm').addEventListener('submit', function(even
     // Tentukan endpoint API berdasarkan format (video atau audio)
     let apiUrl;
     if (format === 'mp4') {
-        apiUrl = `https://api.maelyn.tech/api/youtube/video?url=${encodeURIComponent(url)}&apikey=AtharBotz`;
+        apiUrl = `https://fgsi-ytdl.hf.space/?url=${encodeURIComponent(url)}`;
     } else if (format === 'mp3') {
         apiUrl = `https://api.maelyn.tech/api/youtube/audio?url=${encodeURIComponent(url)}&apikey=AtharBotz`;
     }
