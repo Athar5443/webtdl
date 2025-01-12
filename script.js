@@ -9,7 +9,7 @@ document.getElementById("fetchData").addEventListener("click", function () {
     const apiKey = "AtharBotz";
 
     // Fetch video data
-    fetch(`${apiUrl}?url=${youtubeUrl}&type=video&quality=1080p&apikey=${apiKey}`)
+    fetch(`${apiUrl}?url=${youtubeUrl}&apikey=${apiKey}`)
         .then(response => response.json())
         .then(data => {
             if (data.status === true) {
