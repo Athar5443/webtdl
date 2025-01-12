@@ -5,7 +5,7 @@ document.getElementById("fetchData").addEventListener("click", function () {
         return;
     }
 
-    const apiUrl = "https://api.neoxr.eu/api/youtube";
+    const apiUrl = "https://api.betabotz.eu.org/api/download/ytmp4?";
     const apiKey = "AtharBotz";
 
     // Fetch video data
